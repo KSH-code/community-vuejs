@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Vuejs - 한국 사용자 커뮤니티</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="script/vue.min.js"></script>
+</head>
+<body>
+  <template><h></h></template>
+    <div id="wrap">
+        <header>
+            <nav class="h_nav">
+                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                <ul>
+                    <li v-for="list in lists">
+                        <a href="#">{{list}}</a>
+                    </li>
+                </ul>
+                <a href="/login.html"></a>
+            </nav>
+        </header>
+    </div>
+</body>
+<script>
+    //import h from 'vue/header.vue'
+    var nav = new Vue({
+        el: 'header > nav',
+        data: {
+            lists: ['Questions', 'Know-how', 'Meet']
+        }
+    })
+</script>
+</html>
