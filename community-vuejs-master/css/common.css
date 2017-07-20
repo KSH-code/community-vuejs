@@ -1,4 +1,14 @@
 @charset "utf-8";
+*{
+    color: #232323;
+}
 header li{
     list-style-type: none;
+}
+.x_center{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tac{
+    text-align: center;
 }

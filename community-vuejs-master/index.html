@@ -5,27 +5,33 @@
     <title>Vuejs - 한국 사용자 커뮤니티</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="script/vue.min.js"></script>
 </head>
 <body>
-  <template><h></h></template>
     <div id="wrap">
         <header>
-            <nav class="h_nav">
+            <nav class="h_nav x_center">
                 <a href="./index.html"><img src="img/logo.png" alt=""></a>
                 <ul>
                     <li v-for="list in lists">
-                        <a href="#">{{list}}</a>
+                        <a href="#" class="f_black tac">{{list}}</a>
                     </li>
                 </ul>
-                <a href="/login.html"></a>
+                <a href="/login.html" class="sign_in tac">Log in</a>
             </nav>
         </header>
+        <div id="h_content">
+            <h1 class="tac">어서오세요.<br><span>이 커뮤니티는 자유롭게 모두 이용 가능합니다.</span></h1>
+            <h2 class="x_center tac">함께 커뮤니티를 만들어갈 분을 구합니다.</h2>
+        </div>
+        <div id="content">
+        d
+        </div>
     </div>
 </body>
 <script>
-    //import h from 'vue/header.vue'
     var nav = new Vue({
         el: 'header > nav',
         data: {
