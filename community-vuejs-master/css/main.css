@@ -24,6 +24,7 @@
     width: 500px;
 }
 .latest_q_wrap{
+    position: relative;
     width: 682px;
 }
 .latest_q{
@@ -39,4 +40,22 @@
 .latest_q_wrap ul{
     list-style-type: none;
     padding: 10px;
+}
+.latest_q_wrap li{
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+    min-height: 65px;
+    padding: 25px 0 0 0;
+}
+.latest_q_wrap li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+.title{
+    font-size: 18px;
+    clear: both;
+}
+.writer{
+    font-size: 10px;
+    display: block;
+    text-align: right;
 }

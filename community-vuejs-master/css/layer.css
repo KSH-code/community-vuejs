@@ -6,7 +6,13 @@
 header{
     width: 100%;
     height: 60px;
+}
+header > div{
+    width: 100%;
     background-color: #fafafb;
+    height: 60px;
+    z-index: 2;
+    position: fixed;
 }
 header,nav{
     position: relative;
@@ -14,7 +20,6 @@ header,nav{
 .h_nav{
     width: 1025px;
     height: 60px;
-    position: fixed;
     z-index: 2;
 }
 #content{

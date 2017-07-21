@@ -12,28 +12,30 @@
 <body>
     <div id="wrap">
         <header>
-            <nav class="h_nav x_center">
-                <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                <ul>
-                    <li v-for="list in lists">
-                        <a href="#" class="f_black tac">{{list}}</a>
-                    </li>
-                </ul>
-                <a href="/login.html" class="sign_in tac">Log in</a>
-            </nav>
+            <div>
+                <nav class="h_nav x_center">
+                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <ul>
+                        <li v-for="list in lists">
+                            <a href="#" class="f_black tac">{{list}}</a>
+                        </li>
+                    </ul>
+                    <a href="/login.html" class="sign_in tac">Log in</a>
+                </nav>
+            </div>
         </header>
         <div id="h_content">
             <h1 class="tac">어서오세요.<br><span>이 커뮤니티는 자유롭게 모두 이용 가능합니다.</span></h1>
             <h2 class="x_center tac">함께 커뮤니티를 만들어갈 분을 구합니다.</h2>
         </div>
         <div id="content">
-           <article class="fl latest_q_wrap">
+           <article class="latest_q_wrap fl">
                 <p class="latest_q nbg">최신 질문</p>
                 <ul>
                     <li v-for='list in lists'>
                         <p>
-                            <span>{{list.title}}</span>
-                            <span>{{list.content}}</span>
+                            <a href="#" class="title">{{list.title}}</a>
+                            <span class="writer">{{list.writer}}</span>
                         </p>
                     </li>
                 </ul>
@@ -46,7 +48,7 @@
 </body>
 <script>
     var nav = new Vue({
-        el: 'header > nav',
+        el: 'header > div > nav',
         data: {
             lists: ['Questions', 'Know-how', 'Meet']
         }
@@ -55,26 +57,26 @@
         el: '.latest_q_wrap',
         data: {
             lists: [{
-                title: '안녕하세요',
-                content: '테스트입니다.'
+                title: '안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요',
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             },{
                 title: '안녕하세요',
-                content: '테스트입니다.'
+                writer: '김성훈'
             }]
         }
     })
