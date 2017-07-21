@@ -23,6 +23,20 @@
     color: white;
     width: 500px;
 }
-#content{
-    margin-top: 30px;
+.latest_q_wrap{
+    width: 682px;
+}
+.latest_q{
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px dotted #e2e3e4;
+}
+#content aside{
+    width: 251px;
+}
+.latest_q_wrap ul{
+    list-style-type: none;
+    padding: 10px;
 }

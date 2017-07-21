@@ -27,7 +27,20 @@
             <h2 class="x_center tac">함께 커뮤니티를 만들어갈 분을 구합니다.</h2>
         </div>
         <div id="content">
-        d
+           <article class="fl latest_q_wrap">
+                <p class="latest_q nbg">최신 질문</p>
+                <ul>
+                    <li v-for='list in lists'>
+                        <p>
+                            <span>{{list.title}}</span>
+                            <span>{{list.content}}</span>
+                        </p>
+                    </li>
+                </ul>
+           </article>
+           <aside class="fr">
+           
+           </aside>
         </div>
     </div>
 </body>
@@ -36,6 +49,33 @@
         el: 'header > nav',
         data: {
             lists: ['Questions', 'Know-how', 'Meet']
+        }
+    })
+    var latest_question = new Vue({
+        el: '.latest_q_wrap',
+        data: {
+            lists: [{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            },{
+                title: '안녕하세요',
+                content: '테스트입니다.'
+            }]
         }
     })
 </script>

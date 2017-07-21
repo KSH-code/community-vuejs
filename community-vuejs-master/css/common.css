@@ -1,4 +1,16 @@
 @charset "utf-8";
+@font-face{
+    font-family:'배달의민족 한나는 열한살';
+	src: url('../font/BMHANNA_11yrs.ttf') format('truetype');
+}
+@font-face{
+    font-family:'배달의민족 연성체';
+	src: url('../font/BMYEONSUNG_ttf.ttf') format('truetype');
+}
+@font-face{
+    font-family:'Nanum Barun Gothic';
+	src: url('https://github.com/zkyz/NanumBarunGothic-webfont/blob/master/fonts/NanumBarunGothic.ttf') format('truetype');
+}
 *{
     color: #232323;
 }
@@ -11,4 +23,19 @@ header li{
 }
 .tac{
     text-align: center;
+}
+.hana{
+    font-family:'배달의민족 한나는 열한살';
+}
+.yeonseong{
+    font-family:'배달의민족 연성체';
+}
+.nbg{
+    font-family:'Nanum Barun Gothic';
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
 }
