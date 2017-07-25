@@ -1,0 +1,47 @@
+%!Adobe-FontList 1.14
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BMHANNA11yrsold
+FamilyName:BM HANNA 11yrs old
+StyleName:Regular
+FullName:BM HANNA 11yrs old
+MenuName:배달의민족 한나는 열한살
+StyleBits:0
+FamilyNameNative:배달의민족 한나는 열한살
+StyleNameNative:Regular
+FullNameNative:배달의민족 한나는 열한살
+WritingScript:Korean
+OutlineFileName:J:\Vuejs\community-vuejs-master\Font\BMHANNA_11yrs.ttf
+DataFormat:sfntData
+FileLength:1293272
+FileModTime:1500619604
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BMYEONSUNG
+FamilyName:BM YEONSUNG
+StyleName:Regular
+FullName:BM YEONSUNG
+MenuName:배달의민족 연성
+StyleBits:0
+FamilyNameNative:배달의민족 연성
+StyleNameNative:Regular
+FullNameNative:배달의민족 연성
+WritingScript:Korean
+OutlineFileName:J:\Vuejs\community-vuejs-master\Font\BMYEONSUNG_ttf.ttf
+DataFormat:sfntData
+FileLength:1898404
+FileModTime:1500620458
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
