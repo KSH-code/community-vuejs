@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Vuejs - 한국 사용자 커뮤니티</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layer.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/common.css">
-    <script src="script/vue.min.js"></script>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="/script/vue.min.js"></script>
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <header>
             <div>
                 <nav class="h_nav x_center">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="/"><img src="/img/logo.png" alt=""></a>
                     <ul>
                         <li v-for="list in lists">
                             <a href="#" class="f_black tac">{{list}}</a>
                         </li>
                     </ul>
-                    <a href="/login.html" class="sign_in tac">Log in</a>
+                    <a href="/login" class="sign_in tac">Log in</a>
                 </nav>
             </div>
         </header>
@@ -98,7 +98,6 @@
             }]
         }
     })
-
 </script>
 
 </html>

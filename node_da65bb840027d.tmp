@@ -11,7 +11,7 @@ var ejs = require('ejs');
 var bodyparser = require('body-parser');
 
 //public folder is static
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 //ejs setting
 app.set('views', __dirname + '/views');
@@ -19,9 +19,11 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 //bodyparser
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 
-require('./routes/main')(app)
+app.use(require('routes/main')(app));
+
+
 app.listen(4000);
